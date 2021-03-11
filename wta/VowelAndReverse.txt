@@ -1,0 +1,91 @@
+Vowel:::::::::::::::::
+
+<html>
+<head>
+<script>
+function vow(st)
+{
+var pos;
+pos=st.search(/[aeiouAEIOU]/);
+if(pos>0)
+alert("Left most vowel is present at "+(pos+1));
+else
+alert("Vowel not found");
+}
+</script>
+<style>
+input[type=button]{
+color:red;
+font-weight:bold;
+background-color:pink;
+border:2px solid blue;
+}
+
+input[type=text]{
+border:2px solid magenta;
+}
+
+h1{
+color:blue;
+}
+
+body{
+background-color:chartreuse ;
+}
+</style>
+</head>
+<body align="center">
+<form>
+<h1>Enter the text</h1>
+<input type="text" id="voweltext"/>
+<input type="button" value="click me" onclick="vow(voweltext.value);"/>
+</form>
+</body>
+</html>
+
+
+
+Reverse:::::::::::::::::::::::::
+
+<html>
+<head>
+<script>
+function rev()
+{
+var n=prompt('Enter any number');
+n=parseInt(n);
+var temp=0,rev=0;
+while(n>0)
+{
+temp=n%10;
+rev=rev*10+temp;
+n=n/10;
+n=parseInt(n);
+}
+document.write("<h1>Reverse of number is:</h1>"+rev);
+}
+</script>
+   <style>
+input[type=button]{
+color:Bisque ;
+font-weight:bold;
+background-color:CornflowerBlue ;
+border:2px solid DarkBlue ;
+}
+
+input[type=text]{
+border:2px solid magenta;
+}
+
+body{
+background-color:LightSkyBlue;
+}
+</style>
+</head>
+<body align="center">
+<form>
+<input type="button" value="click me" onclick="rev();"/>
+</form>
+</body>
+</html>
+

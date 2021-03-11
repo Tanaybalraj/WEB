@@ -1,0 +1,64 @@
+.html
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE student_information[
+<!ELEMENT student_information (ad+)>
+<!ELEMENT ad (usn,name,branch,college,year,email)>
+<!ELEMENT usn (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT branch (#PCDATA)>
+<!ELEMENT college (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+]>
+<?xml-stylesheet type="text/css" href="p5.css"?>
+<student_information>
+<v>
+<h1>FIRST STUDENT INFORMATION</h1>
+<ad><label>usn:</label><usn>1bg16cs070</usn></ad>
+<ad><label>name:</label><name>Nishika Tiku</name></ad>
+<ad><label>branch:</label><branch>CSE</branch></ad>
+<ad><label>college:</label><college>BNMIT</college></ad>
+<ad><label>year:</label><year>2016</year></ad>
+<ad><label>email:</label><email>nishikatiku098@gmail.com</email></ad>
+</v>
+<h1>SECOND STUDENT INFORMATION</h1>
+<ad><label>usn:</label><usn>1bg16cs026</usn></ad>
+<ad><label>name:</label><name>Bhavana NM</name></ad>
+<ad><label>branch:</label><branch>CSE</branch></ad>
+<ad><label>college:</label><college>BNMIT</college></ad>
+<ad><label>year:</label><year>2016</year></ad>
+<ad><label>email:</label><email>bhavananm04@gmail.com</email></ad>
+
+<h1>THIRD STUDENT INFORMATION</h1>
+<ad><label>usn:</label><usn>1bg16cs071</usn></ad>
+<ad><label>name:</label><name>Nithyashree HC</name></ad>
+<ad><label>branch:</label><branch>CSE</branch></ad>
+<ad><label>college:</label><college>BNMIT</college></ad>
+<ad><label>year:</label><year>2016</year></ad>
+<ad><label>email:</label><email>nithyashree@gmail.com</email></ad>
+</student_information>
+
+
+
+.css
+
+ad{
+display:block;
+}
+label{
+font-weight:bold;
+color:blue;
+border:2px solid gray;
+}
+h1{
+color:red;
+border:2px solid black;
+}
+student_information{
+background-color:pink;
+text-align:center;
+margin-top:80px;
+}
+
